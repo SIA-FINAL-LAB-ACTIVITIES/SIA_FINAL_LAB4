@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "d57c7419-b97f-402d-a5c9-0495389b2d6e",
+		"name": "sia_site2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "DlvvlgXIhf1V86wqFvgOKlbZZNVhMnLr",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Anna",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "default"
+						},
+						{
+							"key": "gender",
+							"value": "Female",
+							"type": "default"
+						},
+						{
+							"key": "jobid",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/add/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"add",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "DlvvlgXIhf1V86wqFvgOKlbZZNVhMnLr",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/delete/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"delete",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "DlvvlgXIhf1V86wqFvgOKlbZZNVhMnLr",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/update/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"update",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "DlvvlgXIhf1V86wqFvgOKlbZZNVhMnLr",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/find/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"find",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW ALL USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "DlvvlgXIhf1V86wqFvgOKlbZZNVhMnLr",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/show/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"show",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
